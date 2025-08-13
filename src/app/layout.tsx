@@ -8,11 +8,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Xiaochuan Li - Personal Page",
-  description: "Personal academic website of Xiaochuan Li, focusing on ML and NLP research",
-  keywords: "Xiaochuan Li, Carnegie Mellon University, ML, NLP, Machine Learning, Natural Language Processing",
+  title: "Xiaochuan Li - Ph.D. Student at Carnegie Mellon University",
+  description: "Xiaochuan Li is a Ph.D. student at Carnegie Mellon University advised by Prof. Chenyan Xiong. Research interests in Machine Learning and Natural Language Processing, with focus on data-centric large language models.",
+  keywords: "Xiaochuan Li, Carnegie Mellon University, CMU, ML, NLP, Machine Learning, Natural Language Processing, PhD student, Chenyan Xiong",
   authors: [{ name: "Xiaochuan Li" }],
   viewport: "width=device-width, initial-scale=1",
+  openGraph: {
+    title: "Xiaochuan Li - Ph.D. Student at CMU",
+    description: "Ph.D. student at Carnegie Mellon University, research in Machine Learning and Natural Language Processing",
+    url: "https://xiaochuanli.com",
+    siteName: "Xiaochuan Li",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Xiaochuan Li - Ph.D. Student at CMU",
+    description: "Ph.D. student at Carnegie Mellon University, research in ML and NLP",
+  },
 };
 
 export default function RootLayout({
