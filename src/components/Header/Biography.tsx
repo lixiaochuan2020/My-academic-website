@@ -11,7 +11,7 @@ export default function Biography() {
           <li>Generating higher-quality and more effective training data.</li>
         </ul>
         <p>
-        Prior to attending CMU, I earned my bachelor's degree in Software Engineering with the highest honors from Tsinghua University in 2025. During my exchange at the University of Hong Kong, I was fortunate to work with Prof. <a href="https://taoyds.github.io/" className="text-blue-600 hover:text-blue-800 font-medium transition-colors" target="_blank" rel="noopener noreferrer">Tao Yu</a> on computer-use agents.
+        Prior to attending CMU, I earned my bachelor&apos;s degree in Software Engineering with the highest honors from Tsinghua University in 2025. During my exchange at the University of Hong Kong, I was fortunate to work with Prof. <a href="https://taoyds.github.io/" className="text-blue-600 hover:text-blue-800 font-medium transition-colors" target="_blank" rel="noopener noreferrer">Tao Yu</a> on computer-use agents.
         </p>
       </div>
     </div>
