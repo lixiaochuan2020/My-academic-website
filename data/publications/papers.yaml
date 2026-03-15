@@ -144,3 +144,5 @@ conference:
         text: "website"
       - link: "https://arxiv.org/abs/2404.07972"
         text: "paper"
+      - link: "https://github.com/xlang-ai/OSWorld"
+        text: "code"
