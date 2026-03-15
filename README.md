@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Academic Website
+
+Personal academic homepage for [Xiaochuan Li](https://xiaochuanli.com), built with [Hugo](https://gohugo.io) using the [academimal](https://github.com/yangl1996/academimal) theme.
 
 ## Getting Started
 
-First, run the development server:
+Install [Hugo](https://gohugo.io/installation/) (extended edition), then run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+hugo server
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:1313](http://localhost:1313) to see the result. The page auto-reloads as you edit files.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+config.toml                  # Site configuration
+content/
+  _index.md                  # Homepage (bio, about me)
+  publications/_index.md     # Publications section page
+data/
+  publications/papers.yaml   # Publication entries
+  experience.yaml            # Experience entries
+  awards.yaml                # Award entries
+static/                      # Static assets (images, PDFs, favicons)
+themes/academimal/           # Hugo theme (customized)
+```
 
-## Learn More
+## Editing Content
 
-To learn more about Next.js, take a look at the following resources:
+- **Bio**: Edit `content/_index.md`
+- **Publications**: Edit `data/publications/papers.yaml`
+- **Experience**: Edit `data/experience.yaml`
+- **Awards**: Edit `data/awards.yaml`
+- **Site config** (name, email, social links): Edit `config.toml`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Building
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+hugo --gc --minify
+```
 
-## Deploy on Vercel
+Output is generated in the `public/` directory.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The site is deployed to [GitHub Pages](https://pages.github.com) via GitHub Actions. Pushing to `main` triggers an automatic build and deploy (see `.github/workflows/hugo.yml`).
+
+Custom domain `xiaochuanli.com` is configured via the `static/CNAME` file and DNS A records pointing to GitHub Pages.
