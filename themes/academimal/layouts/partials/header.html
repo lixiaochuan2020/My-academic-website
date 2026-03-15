@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Site.Title }} | {{ .Title }}</title>
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "/lti-logo/favicon-32x32.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "/lti-logo/favicon-16x16.png" | relURL }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/lti-logo/apple-touch-icon.png" | relURL }}">
+    <link rel="manifest" href="{{ "/lti-logo/site.webmanifest" | relURL }}">
+    <meta property="og:title" content="Xiaochuan Li - Ph.D. Student at CMU">
+    <meta property="og:description" content="Ph.D. student at Carnegie Mellon University, research in Machine Learning and Natural Language Processing">
+    <meta property="og:image" content="https://xiaochuanli.com/self.png">
+    <meta property="og:url" content="https://xiaochuanli.com/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Xiaochuan Li - Ph.D. Student at CMU">
+    <meta name="twitter:image" content="https://xiaochuanli.com/self.png">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>{{ .Site.Title }}</h1>
+
+		<!-- begin photo -->
+        {{ with .Site.Params.logo }}
+			<img src="{{ . | relURL }}" alt="Logo" />
+        {{ end }}
+		<!-- end photo -->
+
+        <!-- begin short bio -->
+        <p>{{ .Site.Params.shortbio }}</p>
+        <!-- end short bio -->
+
+        <div class="compact-sidebar">
+		<!-- begin email -->
+        <p>
+          <img src="{{ "/icons/mail-symbol.svg" | relURL }}" class="octicons">
+            {{ partial "mail.html" . }}
+        </p>
+		<!-- end email -->
+
+        <!-- begin social links -->
+        <p>
+          {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank">GitHub</a>{{ end }}
+          {{ with .Site.Params.twitter }} / <a href="{{ . }}" target="_blank">Twitter</a>{{ end }}
+          {{ with .Site.Params.googleScholar }} / <a href="{{ . }}" target="_blank">Google Scholar</a>{{ end }}
+          {{ with .Site.Params.cvLink }} / <a href="{{ . }}" target="_blank">CV</a>{{ end }}
+        </p>
+        <!-- end social links -->
+
+        </div>
+
+		<hr/>
+        {{ partial "sidebar.html" . }}
+      </header>

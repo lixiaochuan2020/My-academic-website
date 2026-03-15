@@ -1,0 +1,8 @@
+experience:
+  - title: "Research Intern"
+    organization: "Qwen Team"
+    period: "2024.11 - 2025.08"
+    description: "Build a large-scale reinforcement learning infrastructure suitable for training computer-use agents; develop the Qwen3-Coder model."
+    projects:
+      - name: "Qwen3-Coder"
+        link: "https://github.com/QwenLM/Qwen3-Coder"
