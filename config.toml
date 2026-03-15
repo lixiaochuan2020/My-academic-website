@@ -1,0 +1,23 @@
+baseURL = "https://xiaochuanli.com/"
+relativeURLs = true
+title = "Xiaochuan Li"
+theme = "academimal"
+sectionPagesMenu = "main"
+defaultContentLanguage = "en"
+
+[author]
+  name = "Xiaochuan Li"
+  homepage = "https://xiaochuanli.com/"
+
+[params]
+  shortbio = "Ph.D. Student, Language Technologies Institute, Carnegie Mellon University"
+  email = "xiaochu4@andrew.cmu.edu"
+  logo = "/self.png"
+  github = "https://github.com/lixiaochuan2020"
+  twitter = "https://twitter.com/xiaochuanlee"
+  googleScholar = "https://scholar.google.com/citations?user=97QHT-0AAAAJ&hl=en"
+  cvLink = "/files/Xiaochuan_s_CV_20250813.pdf"
+  highlightAuthor = "Xiaochuan Li"
+
+[markup.goldmark.renderer]
+  unsafe = true

@@ -1,0 +1,12 @@
+{{ with .Site.Data.experience.experience }}
+<h2>Experience</h2>
+{{ range . }}
+<p>
+    <strong>{{ .title }}</strong>, {{ .organization }} ({{ .period }})<br>
+    {{ .description }}
+    {{ with .projects }}
+    <br>{{ range first 1 . }}[<a href="{{ .link }}" target="_blank">{{ .name }}</a>]{{ end }}{{ range after 1 . }}, [<a href="{{ .link }}" target="_blank">{{ .name }}</a>]{{ end }}
+    {{ end }}
+</p>
+{{ end }}
+{{ end }}
