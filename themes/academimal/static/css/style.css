@@ -413,6 +413,45 @@ footer {
   bottom: 50px;
   -webkit-font-smoothing: subpixel-antialiased; }
 
+.social-icons {
+  margin: 10px 0 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center; }
+
+.social-icons a {
+  color: #727272;
+  font-size: 20px; }
+
+.social-icons a:hover {
+  color: #267CB9; }
+
+.conf-name {
+  font-style: italic;
+  font-weight: 700;
+  color: #222; }
+
+.education-table {
+  border-collapse: collapse;
+  margin-bottom: 20px; }
+
+.education-table tr {
+  border: none; }
+
+.education-table td {
+  border-bottom: none;
+  padding: 4px 10px 4px 0;
+  vertical-align: top; }
+
+.exp-detail {
+  color: #727272;
+  font-size: 13px; }
+
+.edu-period {
+  white-space: nowrap;
+  color: #999;
+  min-width: 110px; }
+
 @media print, screen and (max-width: 960px) {
   div.wrapper {
     width: auto;

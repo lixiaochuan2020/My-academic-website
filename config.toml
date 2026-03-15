@@ -10,13 +10,14 @@ defaultContentLanguage = "en"
   homepage = "https://xiaochuanli.com/"
 
 [params]
-  shortbio = "Ph.D. Student, Language Technologies Institute, Carnegie Mellon University"
+  shortbio = "Ph.D. student | CMU"
   email = "xiaochu4@andrew.cmu.edu"
   logo = "/self.png"
   github = "https://github.com/lixiaochuan2020"
   twitter = "https://twitter.com/xiaochuanlee"
   googleScholar = "https://scholar.google.com/citations?user=97QHT-0AAAAJ&hl=en"
   cvLink = "/files/Xiaochuan_s_CV_20250813.pdf"
+  linkedin = "https://www.linkedin.com/in/xiaochuan-li-776994274/"
   highlightAuthor = "Xiaochuan Li"
 
 [markup.goldmark.renderer]

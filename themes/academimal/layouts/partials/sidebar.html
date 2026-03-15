@@ -1,5 +1,6 @@
 <nav>
   {{ range .Site.Menus.main }}
     <a href="{{ .URL | relURL }}">{{ .Name }}</a><br>
+    {{ if eq .Name "Home" }}<div style="margin-bottom:6px"></div>{{ end }}
   {{ end }}
 </nav>

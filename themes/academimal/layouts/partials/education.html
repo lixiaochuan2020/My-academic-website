@@ -1,0 +1,11 @@
+{{ with .Site.Data.education.education }}
+<h2>Education</h2>
+<table class="education-table">
+{{ range . }}
+<tr>
+    <td class="edu-period">{{ .period }}</td>
+    <td>{{ .degree }}</td>
+</tr>
+{{ end }}
+</table>
+{{ end }}
