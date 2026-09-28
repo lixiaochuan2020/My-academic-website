@@ -1,5 +1,19 @@
 preprint:
-  - title: "Benchmark Test-Time Scaling of General LLM Agents"
+  - title: "ACM: Agentic Context Management for Long Horizon Tasks"
+    authors:
+      - "Xiaochuan Li"
+      - "Ryan Ming"
+      - "Meng Chu"
+      - "Shuai Shao"
+      - "Rong Jin"
+      - "Chenyan Xiong"
+    date: "2026"
+    links:
+      - link: "https://arxiv.org/abs/2607.23809"
+        text: "paper"
+
+conference:
+  - title: "Evaluating Test-Time Scaling of General LLM Agents"
     authors:
       - "Xiaochuan Li"
       - "Ryan Ming"
@@ -10,7 +24,8 @@ preprint:
       - "Shuai Shao"
       - "Rong Jin"
       - "Chenyan Xiong"
-    date: "2025"
+    book: "NeurIPS E&D Track"
+    date: "2026"
     links:
       - link: "https://general-agentbench.github.io/"
         text: "website"
@@ -19,7 +34,6 @@ preprint:
       - link: "https://github.com/cxcscmu/General-AgentBench"
         text: "code"
 
-conference:
   - title: "OpenCUA: Open Foundations for Computer-Use Agents"
     authors:
       - "Xinyuan Wang"
