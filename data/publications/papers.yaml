@@ -9,8 +9,12 @@ preprint:
       - "Chenyan Xiong"
     date: "2026"
     links:
+      - link: "https://x.com/xiaochuanlee/status/2085004778967368165"
+        text: "X"
       - link: "https://arxiv.org/abs/2607.23809"
         text: "paper"
+      - link: "https://github.com/lixiaochuan2020/agentic-context-management"
+        text: "code"
 
 conference:
   - title: "Evaluating Test-Time Scaling of General LLM Agents"
