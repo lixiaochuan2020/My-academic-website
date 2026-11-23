@@ -1,0 +1,7 @@
+<nav>
+  {{ $items := .Site.Menus.main }}
+  {{ range $i, $item := $items }}
+    <a href="{{ $item.URL | relURL }}">{{ $item.Name }}</a><br>
+    {{ if lt (add $i 1) (len $items) }}<div style="margin-bottom:6px"></div>{{ end }}
+  {{ end }}
+</nav>
